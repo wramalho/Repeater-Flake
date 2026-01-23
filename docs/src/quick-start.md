@@ -1,0 +1,43 @@
+# Quick Start
+
+1. **Create a deck in Markdown (`cards/neuro.md`).**
+
+   ```markdown
+   You can put your normal notes here, `repeater` will ignore them.
+   Once a "Q:,A:,C:" block is detected, it will automatically
+   turn it into a card.
+
+   Q: What does a synaptic vesicle store?
+   A: Neurotransmitters awaiting release.
+
+   ---
+   Use a separator to mark the end of a card^
+   Then feel free to go back to adding regular notes.
+
+   C: Speech is [produced] in [Broca's] area.
+   ```
+
+   Alternatively, launch the built-in editor with:
+
+   ```sh
+   repeater create cards/neuro.md
+   ```
+
+2. **Index the cards and start a drill session.**
+
+   ```sh
+   repeater drill cards
+   ```
+
+   - `Space`/`Enter`: reveal the answer or cloze.
+   - `O`: open the first media file (image/audio/video) referenced in the current card before revealing the answer.
+   - `F`: mark as `Fail`, `Space`/`Enter`: mark as `Pass`.
+   - `Esc` or `Ctrl+C`: end the session early (progress so far is saved).
+
+3. **Check your collection status.**
+
+   ```sh
+   repeater check cards
+   ```
+
+   This launches the full-screen dashboard that shows totals, due/overdue cards, and upcoming workload; press `Esc` or `Ctrl+C` when you want to exit. Use `--plain` if you prefer a plain-text summary for scripts.

@@ -1,0 +1,9 @@
+[book]
+title = "repeater"
+authors = ["shaankhosla"]
+language = "en"
+
+[output.html]
+git-repository-url = "https://github.com/shaankhosla/repeater/"
+no-section-label = true
+
